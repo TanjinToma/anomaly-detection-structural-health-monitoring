@@ -1,0 +1,47 @@
+# --- Python cache & build files ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Environment & dependency files ---
+.env
+.venv/
+venv/
+env/
+*.sqlite3
+Pipfile.lock
+poetry.lock
+
+# --- IDE & editor specific files ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Logs and outputs ---
+*.log
+logs/
+runs/
+output/
+checkpoints/
+models/
+*.ckpt
+
+# --- Temporary files ---
+*.tmp
+*.bak
+*.out
+
+# --- OS-generated files ---
+Thumbs.db
+.DS_Store
+
