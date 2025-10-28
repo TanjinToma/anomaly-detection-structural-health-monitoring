@@ -60,31 +60,6 @@ Training is performed only on **healthy windows** (first 30% of each engine’s 
 
 ---
 
-## Key Steps
-
-1. **Preprocessing**
-
-   * Load and scale sensor data
-   * Create overlapping sliding windows (e.g., 30 cycles × 24 features)
-
-2. **Training**
-
-   * Train the LSTM Autoencoder on healthy sequences
-   * Use MSE reconstruction loss
-
-3. **Evaluation**
-
-   * Compute reconstruction error for all windows
-   * Determine threshold (99th percentile of validation healthy-set errors)
-   * Plot anomaly score vs cycle
-
-4. **Interpretation**
-
-   * **Low-RUL engines** show rising anomaly scores near the end of life
-   * **High-RUL engines** show stable, low anomaly scores
-
----
-
 ## Results
 
 | Engine Type                       | RUL Level    | Behavior                                      |
