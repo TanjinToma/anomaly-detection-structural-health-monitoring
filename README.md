@@ -4,7 +4,22 @@ This project demonstrates **unsupervised anomaly detection** on the **NASA Turbo
 An **LSTM Autoencoder** is trained on healthy engine sensor readings to reconstruct normal behavior.
 When degradation occurs, the reconstruction error (MSE) increases, allowing detection of abnormal operating conditions and remaining useful life (RUL) trends.
 
-![anomaly-detection](overveiw.png)
+![anomaly-detection-structural-health-monitoring](overview_AD.png)
+
+---
+
+## Project Structure
+
+```
+anomaly-detection-structural-health-monitoring/
+│
+├── anomaly-detection_main.ipynb   # Main notebook for preprocessing, training, and visualization  
+├── dataloader.py                  # Dataset loader 
+├── model_LSTMAE.py                # LSTM Autoencoder model definition  
+├── evaluate.py                    # Anomaly Scoring utilities  
+└── README.md                      # Project documentation
+```
+
 ---
 
 ## Project Overview
@@ -31,21 +46,6 @@ Each subset (FD001–FD004) contains:
 
 For this project, the subset **FD001** was used.
 
----
-
-## Project Structure
-
-```
-anomaly-detection-structural-health-monitoring/
-│
-├── anomaly-detection_main.ipynb   # Main notebook for preprocessing, training, and visualization  
-├── dataloader.py                  # Dataset loader 
-├── model_LSTMAE.py                # LSTM Autoencoder model definition  
-├── evaluate.py                    # Anomaly Scoring utilities  
-└── README.md                      # Project documentation
-```
-
----
 
 ## Model Architecture
 
